@@ -97,7 +97,7 @@
   }
 
   .burger__line:nth-child(3) {
-    bottom: 2px;
+    bottom: 6px;
   }
 
   .burger__line:nth-child(2) {
@@ -404,11 +404,11 @@
 }
 
 @media (max-width: 576px) {
-  
-   html, body {
+
+  html, body {
     overflow-x: hidden;
   }
-  
+
   .section-offset {
     padding: 0 15px;
   }
@@ -436,12 +436,16 @@
   }
 
   .slider-content {
+    width: auto;
     align-items: center;
     top: 65px;
     bottom: 59px;
     left: 22px;
+    right: 22px;
   }
-
+.slider-text-block {
+  width: 100%;
+}
   .slider-title {
     margin-bottom: 7px;
     font-size: 20px;
@@ -454,6 +458,7 @@
     font-size: 12px;
     line-height: 15px;
     text-align: center;
+    font-weight: 700;
   }
 
   .slider__btn {
@@ -492,7 +497,7 @@
   }
 
   .about-us__left-card {
-    min-height: 390px;
+    min-height: 520px;
     background-size: contain;
   }
 
@@ -554,9 +559,13 @@
     line-height: 17px;
   }
 
+  .tabs-item {
+    flex-direction: column-reverse;
+  }
+
   .how-we-work__card-right {
     margin-bottom: 25px;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
   }
 
@@ -628,6 +637,7 @@
   }
 
   .footer__div1 {
+    margin: 0 auto;
     padding-top: 16px;
     justify-content: center;
     align-items: center;
@@ -645,7 +655,7 @@
   }
 
   .footer__label {
-    width: 100%;
+    width: fit-content;
   }
 
 }
