@@ -181,6 +181,11 @@ body {
   height: 72px;
 }
 
+.header__logo:focus-visible {
+  outline: none;
+  outline: 2px solid var(--orange-medium);
+}
+
 .nav__list {
   gap: 85px;
 }
@@ -640,7 +645,8 @@ body {
   border-top: 1px solid var(--orange-medium);
 }
 
-.list__item:focus-visible {
+.list__item:focus {
+  color: var(--orange-medium);
   border-bottom: 1px solid var(--orange-medium);
   border-top: 1px solid var(--orange-medium);
 }
@@ -653,6 +659,19 @@ body {
 .list__item:hover button {
   color: var(--orange-medium);
   cursor: pointer;
+}
+
+.ac-header:focus-visible {
+  color: var(--orange-medium);
+}
+
+.ac-trigger:focus {
+  outline: none;
+}
+
+.ac .ac-trigger:focus-visible {
+  color: var(--orange-medium);
+
 }
 
 .faq__icon::before {
@@ -697,11 +716,14 @@ transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
   background-color: var(--white);
 }
 
-.faq__icon:focus-visible {
+.ac-trigger:focus-visible .faq__icon {
   background-color: var(--orange-medium);
 }
-.faq__icon:focus-visible::after,
-.faq__icon:focus-visible::before {
+
+.ac-trigger:focus-visible .faq__icon::after {
+  background-color: var(--white);
+}
+.ac-trigger:focus-visible .faq__icon::before {
   background-color: var(--white);
 }
 
@@ -735,6 +757,12 @@ transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 
 .footer__logo {
   margin-bottom: 24px;
+  width: fit-content;
+}
+
+.footer__logo:focus-visible {
+  outline: none;
+  outline: 2px solid var(--orange-medium);
 }
 
 .footer__div1 {
