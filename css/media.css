@@ -606,6 +606,12 @@
     width: 30px;
     height: 30px;
   }
+  
+   .ac-trigger {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   .how-we-work__text {
     margin-bottom: 25px;
