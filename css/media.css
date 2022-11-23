@@ -638,6 +638,12 @@
     font-size: 14px;
     line-height: 24px;
   }
+  
+  .ac .ac-panel .ac-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
 
   .faq__icon {
     width: 30px;
